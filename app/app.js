@@ -19,9 +19,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //CORS
-app.use(cors({ origin: 'https://localhost:3000' }));
+app.use(cors({ origin: 'https://inmobiliaria-drab.vercel.app/' }));
 app.use((req, res, next)=> {
-    res.header('Access-control-Allow-Origin', 'https://localhost:3000');
+    res.header('Access-control-Allow-Origin', 'https://inmobiliaria-drab.vercel.app/');
     res.header('Access-control-Allow-Credentials', 'true');
     res.header(
         'Access-control-Allow-Headers',
